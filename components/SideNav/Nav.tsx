@@ -288,7 +288,7 @@ export default function Nav() {
         </Sheet>
         <div className="flex w-auto items-center gap-4 md:ml-auto md:gap-2 lg:gap-4">
         <NavigationMenu>
-        <NavigationMenuItem>
+        <NavigationMenuItem style={{ listStyle: 'none', paddingLeft: 0 }}>
           <NavigationMenuTrigger>INVENTORY</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
@@ -336,6 +336,12 @@ export default function Nav() {
                 </MenubarItem>
                 <MenubarItem>
                   <a href="/createpages/createfurniture">Furniture</a>
+                </MenubarItem>
+                <MenubarItem>
+                  <a href="/createpages/createvehicle">Vehicle</a>
+                </MenubarItem>
+                <MenubarItem>
+                  <a href="/createpages/createappliances">Appliances</a>
                 </MenubarItem>
               </MenubarContent>
             </MenubarMenu>
